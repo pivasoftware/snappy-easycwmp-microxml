@@ -199,7 +199,7 @@ if test x$enable_shared != xno; then
 			AC_MSG_RESULT(yes)
 			LIBMICROXML_SHARED="libmicroxml.so.1.0"
 			DSO="\$(CC)"
-			DSOFLAGS="$DSOFLAGS -Wl,-soname,libmicroxml.so.1,-rpath,\$(libdir) -shared \$(OPTIM)"
+			DSOFLAGS="$DSOFLAGS -Wl,-soname,libmicroxml.so.1 -shared \$(OPTIM)"
 			LDFLAGS="$LDFLAGS -Wl,-rpath,\$(libdir)"
 			;;
 
